@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    tools:context="muk.materialdesign.Fragment.Fragment_BlockBuster">
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/SwipeMovieHits"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+        android:id="@+id/listMovieHits"
+        android:background="#EEEEEE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/textVolleyError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FF4444"
+        android:visibility="gone" />
+
+</FrameLayout>

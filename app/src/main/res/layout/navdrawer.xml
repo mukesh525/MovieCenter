@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MainContent">
+    </FrameLayout>
+
+   <fragment
+        android:id="@+id/navdrawer"
+        android:name="muk.materialdesign.Fragment.NavDrawrFragment"
+       android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_nav_drawr"
+        tools:layout="@layout/fragment_nav_drawr" />
+
+
+</android.support.v4.widget.DrawerLayout>

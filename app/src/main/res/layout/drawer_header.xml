@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:layout_width="match_parent"
+    android:background="@color/primary_text"
+    android:layout_height="match_parent">
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/me"
+        app:border="true"
+        android:id="@+id/imgProfile"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:border_color="@color/icons"
+        app:border_width="2dp"
+        app:shadow="true" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/imgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:gravity="right"
+            android:textColor="@color/icons"
+            style="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mukesh"
+            android:gravity="right"
+            android:textColor="@color/icons"
+            style="@style/TextAppearance.AppCompat.Medium" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/accent" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mukeshjha@gmail.com"
+            android:gravity="right"
+            android:textColor="@color/icons"
+            style="@style/TextAppearance.AppCompat.Small" />
+
+    </LinearLayout>
+</RelativeLayout>

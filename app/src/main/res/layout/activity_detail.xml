@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="muk.materialdesign.Activity.Detail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="#FAFAFA"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+    <RelativeLayout
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+
+        <RelativeLayout
+         android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <ImageView
+                android:id="@+id/movieThumbnail"
+                android:layout_width="@dimen/movie_thumbnail_width"
+                android:layout_height="@dimen/movie_thumbnail_height"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/movieThumbnail"
+                android:layout_marginLeft="56dp"
+                android:alpha="0.87"
+                android:gravity="right"
+                android:padding="@dimen/size_half_byte"
+                android:text="Hitman Agent 47"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movieReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/movieTitle"
+                android:alpha="0.87"
+                android:padding="@dimen/size_half_byte"
+                android:text="31-31-31"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/size_text_secondary" />
+
+            <RatingBar
+                android:id="@+id/movieAudienceScore"
+                style="@android:style/Widget.Holo.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/movieReleaseDate"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relativeLayout">
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:text="Continuing the global exploits in the unstoppable franchise built on speed, Vin Diesel, Paul Walker and Dwayne Johnson lead the returning cast of Fast  Furious 7. James Wan directs this chapter of the hugely successful series that also welcomes back favorites Michelle Rodriguez, Jordana Brewster, Tyrese Gibson, Chris Ludacris Bridges, Elsa Pataky and Lucas Black. They are joined by international action stars new to the franchise including Jason Statham, Djimon Hounsou, Tony Jaa, Ronda Rousey and Kurt Russell"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+         </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
